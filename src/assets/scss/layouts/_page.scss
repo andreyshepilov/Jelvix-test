@@ -1,0 +1,22 @@
+.page {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background-color: $clr-white;
+    min-height: 100vh;
+    padding: 50px 0;
+}
+
+.page__container {
+    @extend %clearfix;
+
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $page-max-width;
+    padding: 0 20px;
+}
+
+.page__main {
+    overflow: hidden;
+    position: relative;
+}

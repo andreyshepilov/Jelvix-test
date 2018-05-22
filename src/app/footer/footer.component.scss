@@ -1,0 +1,18 @@
+@import '../../assets/scss/import-list';
+
+.footer {
+    background-color: $clr-1;
+    color: $clr-white;
+    font-size: 20px;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    transition: bottom 0.3s;
+    padding: 10px;
+    text-align: center;
+
+    &.hidden {
+        bottom: -50px;
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../assets/scss/import-list';
+
+.header {
+    background-color: $clr-1;
+    color: $clr-white;
+    font-size: 20px;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s;
+    text-align: center;
+    padding: 10px;
+
+    &.hidden {
+        top: -50px;
+    }
+}

@@ -1,0 +1,17 @@
+@import '../../../assets/scss/import-list';
+
+.users-list {
+    padding: 20px 0;
+}
+
+.users-list__list {
+    @include list-reset;
+}
+
+.users-list__item {
+    margin: 0 0 15px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
