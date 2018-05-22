@@ -1,3 +1,12 @@
-<p>
-  comments-page works!
-</p>
+<div class="comments-list">
+  <h1 class="comments-list__heading">Comments</h1>
+  <ul class="comments-list__list">
+    <div class="comments-list__item" *ngFor="let comment of comments">
+      <app-comment-item 
+        [commentName]="comment.name" 
+        [commentEmail]="comment.email"
+        [commentBody]="comment.body"
+      ></app-comment-item>
+    </div>
+  </ul>
+</div>

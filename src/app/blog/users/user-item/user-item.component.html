@@ -5,5 +5,5 @@
         <div><a href="tel:+{{userPhoneProcessed}}">{{userPhoneProcessed}}</a></div>
         <div><a href="https://{{userWebsite}}">{{userWebsite}}</a></div>
     </div>
-    <a class="user-item__show-btn button-m" routerLink="/posts">Show posts</a>
+    <a class="user-item__show-btn button-m" [routerLink]="['/posts', userId]">Show posts</a>
 </div>

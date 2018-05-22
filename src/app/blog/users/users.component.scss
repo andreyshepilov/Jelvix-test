@@ -4,6 +4,10 @@
     padding: 20px 0;
 }
 
+.users-list__heading {
+    margin: 0 0 20px;
+}
+
 .users-list__list {
     @include list-reset;
 }

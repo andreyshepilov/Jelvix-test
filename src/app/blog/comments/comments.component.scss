@@ -1,1 +1,21 @@
 @import '../../../assets/scss/import-list';
+
+.comments-list {
+    padding: 20px 0;
+}
+
+.comments-list__heading {
+    margin: 0 0 20px;
+}
+
+.comments-list__list {
+    @include list-reset;
+}
+
+.comments-list__item {
+    margin: 0 0 15px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}

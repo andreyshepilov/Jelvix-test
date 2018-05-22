@@ -1,3 +1,12 @@
-<p>
-  posts-page works!
-</p>
+<div class="posts-list">
+  <h1 class="posts-list__heading">Posts</h1>
+  <ul class="posts-list__list">
+    <div class="posts-list__item" *ngFor="let post of posts">
+      <app-post-item 
+        [postTitle]="post.title" 
+        [postBody]="post.body"
+        [postId]="post.id"
+      ></app-post-item>
+    </div>
+  </ul>
+</div>

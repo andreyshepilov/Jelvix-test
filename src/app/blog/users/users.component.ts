@@ -16,6 +16,7 @@ export class UsersComponent implements OnInit {
   ngOnInit() {
     this.api.get('/users').subscribe(users => {
       this.users = users;
+      console.log(users);
     });
   }
 

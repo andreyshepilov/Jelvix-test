@@ -11,6 +11,7 @@ export class UserItemComponent implements OnInit {
   @Input('userEmail') public userEmail;
   @Input('userPhone') public userPhone;
   @Input('userWebsite') public userWebsite;
+  @Input('userId') public userId;
 
   public userPhoneProcessed: string;
 

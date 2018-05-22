@@ -1,3 +1,7 @@
-<p>
-  post-item works!
-</p>
+<div class="post-item">
+  <div class="post-item__post-content">
+      <div><b>{{postTitle}}</b></div>
+      <p>{{postBody}}</p>
+  </div>
+  <a class="post-item__show-btn button-m" [routerLink]="['/comments', postId]">Show comments</a>
+</div>

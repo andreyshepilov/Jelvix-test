@@ -1,1 +1,20 @@
 @import '../../../../assets/scss/import-list';
+
+.comment-item {
+    border: 1px solid $clr-1;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: rgba($clr-2, 0.1);
+    }
+
+    @include media('<sm') {
+        text-align: center;
+    }
+}
+
+.comment-item__comment-content {
+    margin: 0 0 20px;
+    text-align: left;
+}

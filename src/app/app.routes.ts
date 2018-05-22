@@ -15,12 +15,14 @@ export const ROUTES: Routes = [
         component: UsersComponent
     },
     {
-        path: 'posts',
-        component: PostsComponent
+        path: 'posts/:id',
+        component: PostsComponent,
+        pathMatch: 'full'
     },
     {
-        path: 'comments',
-        component: CommentsComponent
+        path: 'comments/:id',
+        component: CommentsComponent,
+        pathMatch: 'full'
     },
     {
         path: '**',

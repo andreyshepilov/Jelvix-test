@@ -49,11 +49,12 @@ export class AppComponent implements OnInit {
     let bodyElement = document.getElementsByTagName("body")[0];
 
     bodyElement.onclick = function(){
-      doubletapHandler();
+      doubleTapHandler();
     };
     
     let myLatestTap;
-    function doubletapHandler() {
+
+    function doubleTapHandler() {
       let now = new Date().getTime();
       let timesince = now - myLatestTap;
 
